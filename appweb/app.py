@@ -194,8 +194,7 @@ def reservar():
         return redirect(url_for('inicio', mensaje='Error al agendar la cita', tipo='error'))
 
 if __name__ == '__main__':
-    app.run(debug=True)from flask import jsonify, Flask, render_template, session, request, redirect, url_for, flash
-import conexion
+    app.run(debug=True)
 from datetime import datetime
 
 app = Flask(__name__)
